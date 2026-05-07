@@ -378,7 +378,7 @@ namespace GeometryGym.Ifc
 			{
 				string valueString = str.Substring(13, str.Length - 14);
 				if (int.TryParse(valueString, out int ts))
-					return new IfcInteger(ts);
+					return new IfcTimeStamp(ts);
 			}
 			int i = 0;
 			if (int.TryParse(str, out i))
